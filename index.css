@@ -1,0 +1,115 @@
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    font-family: "Courier New", Courier, monospace;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:100vh;
+    align-items: center;
+    /* gap: 1rem; */
+}
+.main{
+    width: 23vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.toggle{
+    display: flex;
+    align-items: flex-end;
+    gap: 0.5rem;
+    font-size: 0.6rem;
+    padding: 0.2rem;
+
+}
+.numbers{
+    display: flex;
+    justify-content: space-around;
+}
+.circlebg{
+    background-color: yellow;
+    height: 1.2rem;
+    width: 3rem;
+    border-radius: 50px;
+    display: flex;
+    padding: 0.2rem;
+    /* justify-content: flex-end; */
+    align-items: center;
+}
+.circle{
+    height: 0.8rem;
+    width: 0.8rem;
+    background-color: black;
+    border-radius: 50%;
+}
+.calc{
+    font-weight: bold;
+}
+.output{
+    background-color: rgb(221, 230, 170);
+    border-radius: 5px;
+    /* outline: 3px ridge #333;  */
+    font-weight: bold;
+    display: flex;
+    font-size: 1.7rem;
+    padding: 0.5rem;
+    height: 25%;
+    align-items: center;
+    overflow-x: auto;  
+    white-space: nowrap;
+}
+.key{
+    background: linear-gradient(145deg, rgb(0, 0, 0) 0%, rgb(156, 130, 130) 100%);
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 3.2rem;
+    height: 2rem;
+    /* outline: 3px outset #333;  */
+ 
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 1rem;
+}
+.cancel,.equal {
+    grid-column-start: span 2;
+    width: 100%;
+    background: linear-gradient(145deg, rgb(255, 2, 2) 0%, rgb(235, 107, 107) 100%);
+}
+
+.key:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.equal{
+    background: linear-gradient(145deg, rgb(19, 2, 255) 0%, rgb(110, 142, 231) 100%);
+}
+
+
+.attribution { 
+    font-size: 1rem; 
+    font-weight: bold;
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
