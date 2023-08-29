@@ -4,7 +4,8 @@
     box-sizing: border-box;
     text-decoration: none;
     border: none;
-    font-family: "Courier New", Courier, monospace;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
 }
 
 body{
@@ -13,10 +14,12 @@ body{
     justify-content: center;
     height:100vh;
     align-items: center;
+    background-color: hsl(222, 26%, 31%);
+    color: hsl(0, 0%, 100%);
     /* gap: 1rem; */
 }
 .main{
-    width: 23vw;
+    width: 22.5vw;
     height: 70vh;
     display: flex;
     flex-direction: column;
@@ -34,76 +37,78 @@ body{
     gap: 0.5rem;
     font-size: 0.6rem;
     padding: 0.2rem;
-
 }
 .numbers{
     display: flex;
     justify-content: space-around;
 }
 .circlebg{
-    background-color: yellow;
     height: 1.2rem;
     width: 3rem;
     border-radius: 50px;
     display: flex;
     padding: 0.2rem;
-    /* justify-content: flex-end; */
+    background-color: hsl(223, 31%, 20%);
     align-items: center;
 }
 .circle{
     height: 0.8rem;
     width: 0.8rem;
-    background-color: black;
+    background-color: hsl(6, 63%, 50%);
     border-radius: 50%;
 }
-.calc{
-    font-weight: bold;
-}
 .output{
-    background-color: rgb(221, 230, 170);
+    background-color: hsl(224, 36%, 15%);
     border-radius: 5px;
     /* outline: 3px ridge #333;  */
     font-weight: bold;
     display: flex;
     font-size: 1.7rem;
     padding: 0.5rem;
-    height: 25%;
+    height: 18%;
     align-items: center;
     overflow-x: auto;  
     white-space: nowrap;
 }
 .key{
-    background: linear-gradient(145deg, rgb(0, 0, 0) 0%, rgb(156, 130, 130) 100%);
-    color: white;
+    background-color: hsl(30, 25%, 89%);
+    color: hsl(221, 14%, 31%);
     border-radius: 5px;
+    width: 3.2rem;
+    height: 2.1rem;
     display: flex;
     justify-content: center; 
     align-items: center; 
-    width: 3.2rem;
-    height: 2rem;
-    /* outline: 3px outset #333;  */
- 
+    box-shadow: 0px 3px 0px 0px hsl(28, 16%, 65%);
 }
 .grid-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
     gap: 1rem;
+    background-color: hsl(223, 31%, 20%);
+    padding: 1rem;
+    border-radius: 5px;
 }
 .cancel,.equal {
     grid-column-start: span 2;
-    width: 100%;
-    background: linear-gradient(145deg, rgb(255, 2, 2) 0%, rgb(235, 107, 107) 100%);
+    width: 95%;
 }
-
+.equal{
+    background-color: hsl(6, 63%, 50%);
+    box-shadow: 0px 3px 0px 0px hsl(6, 70%, 34%);
+    color: hsl(0, 0%, 100%);
+}
 .key:hover{
     cursor: pointer;
     transform: scale(1.05);
 }
-.equal{
-    background: linear-gradient(145deg, rgb(19, 2, 255) 0%, rgb(110, 142, 231) 100%);
-}
+.cancel,.del{
+    background-color: hsl(225, 21%, 49%);
+    box-shadow: 0px 3px 0px 0px hsl(224, 28%, 35%);
+    color: hsl(0, 0%, 100%);
 
+}
 
 .attribution { 
     font-size: 1rem; 
