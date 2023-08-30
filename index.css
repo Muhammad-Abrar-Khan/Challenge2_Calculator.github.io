@@ -8,50 +8,52 @@
     font-weight: 700;
 }
 
-:root {
-    --background-color-theme1: hsl(222, 26%, 31%);
-    --body-color-theme1: hsl(0, 0%, 100%);
-    --circle-color-theme1: hsl(6, 63%, 50%);
-    --circlebg-color-theme1: hsl(223, 31%, 20%);
-    --output-bg-color-theme1: hsl(224, 36%, 15%);
-    --key-bg-color-theme1: hsl(30, 25%, 89%);
-    --key-color-theme1: hsl(221, 14%, 31%);
-    --key-shadow-theme1: 0px 3px 0px 0px hsl(28, 16%, 65%);
-    --grid-bg-color-theme1: hsl(223, 31%, 20%);
-    --equal-bg-color-theme1: hsl(6, 63%, 50%);
-    --equal-shadow-theme1: 0px 3px 0px 0px hsl(6, 70%, 34%);
-    --cancel-del-bg-color-theme1: hsl(225, 21%, 49%);
-    --cancel-del-shadow-theme1: 0px 3px 0px 0px hsl(224, 28%, 35%);
-    --otherkeys-color-theme1: hsl(0, 0%, 100%);
-
-    --background-color-theme2: hsl(0, 0%, 90%);
-    --circlebg-color-theme2:hsl(0, 5%, 81%);
-    --key-bg-color-theme2: hsl(45, 7%, 89%)  ;
-    --output-bg-color-theme2:hsl(0, 0%, 93%) ;
-    --cancel-del-bg-color-theme2: hsl(185, 42%, 37%);
-    --cancel-del-shadow-theme2: 0px 3px 0px 0px hsl(185, 58%, 25%) ;
-    --circle-color-theme2:hsl(25, 98%, 40%) ;
-    --equal-bg-color-theme2: hsl(25, 98%, 40%);
-    --equal-shadow-theme2: 0px 3px 0px 0px hsl(25, 99%, 27%);
-    --key-color-theme2: hsl(60, 10%, 19%) ;
-    --key-shadow-theme2: 0px 3px 0px 0px hsl(35, 11%, 61%);
-    --grid-bg-color-theme2: hsl(0, 5%, 81%); 
-    --otherkeys-color-theme2:hsl(0, 0%, 100%) ;
-
-    --background-color-theme3: hsl(268, 75%, 9%);
-    --circlebg-color-theme3:hsl(268, 71%, 12%);
-    --key-bg-color-theme3:  hsl(268, 47%, 21%) ;
-    --key-shadow-theme3: 0px 3px 0px 0px  hsl(290, 70%, 36%);
-    --output-bg-color-theme3:hsl(268, 71%, 12%) ;
-    --cancel-del-bg-color-theme3: hsl(281, 89%, 26%);
-    --cancel-del-shadow-theme3:0px 3px 0px 0px  hsl(290, 70%, 36%) ;
-    --circle-color-theme3:hsl(176, 100%, 44%);
-    --equal-bg-color-theme3: hsl(176, 100%, 44%);
-    --equal-shadow-theme3: 0px 3px 0px 0px hsl(177, 92%, 70%);
-    --key-color-theme3: hsl(52, 100%, 62%);
-    --grid-bg-color-theme3: hsl(268, 71%, 12%);
-    --body-color-theme3:hsl(52, 100%, 62%);
-    --otherkeys-color-theme3:hsl(0, 0%, 100%);
+.theme1{
+    --background-color: hsl(222, 26%, 31%);
+    --body-color: hsl(0, 0%, 100%);
+    --circle-color: hsl(6, 63%, 50%);
+    --circlebg-color: hsl(223, 31%, 20%);
+    --output-bg-color: hsl(224, 36%, 15%);
+    --key-bg-color: hsl(30, 25%, 89%);
+    --key-color: hsl(221, 14%, 31%);
+    --key-shadow: 0px 3px 0px 0px hsl(28, 16%, 65%);
+    --grid-bg-color: hsl(223, 31%, 20%);
+    --equal-bg-color: hsl(6, 63%, 50%);
+    --equal-shadow: 0px 3px 0px 0px hsl(6, 70%, 34%);
+    --cancel-del-bg-color: hsl(225, 21%, 49%);
+    --cancel-del-shadow: 0px 3px 0px 0px hsl(224, 28%, 35%);
+    --otherkeys-color: hsl(0, 0%, 100%);
+}
+.theme2{
+    --background-color: hsl(0, 0%, 90%);
+    --circlebg-color:hsl(0, 5%, 81%);
+    --key-bg-color: hsl(45, 7%, 89%)  ;
+    --output-bg-color:hsl(0, 0%, 93%) ;
+    --cancel-del-bg-color: hsl(185, 42%, 37%);
+    --cancel-del-shadow: 0px 3px 0px 0px hsl(185, 58%, 25%) ;
+    --circle-color:hsl(25, 98%, 40%) ;
+    --equal-bg-color: hsl(25, 98%, 40%);
+    --equal-shadow: 0px 3px 0px 0px hsl(25, 99%, 27%);
+    --key-color: hsl(60, 10%, 19%) ;
+    --key-shadow: 0px 3px 0px 0px hsl(35, 11%, 61%);
+    --grid-bg-color: hsl(0, 5%, 81%); 
+    --otherkeys-color:hsl(0, 0%, 100%) ;
+}
+.theme3{
+    --background-color: hsl(268, 75%, 9%);
+    --circlebg-color:hsl(268, 71%, 12%);
+    --key-bg-color:  hsl(268, 47%, 21%) ;
+    --key-shadow: 0px 3px 0px 0px  hsl(290, 70%, 36%);
+    --output-bg-color:hsl(268, 71%, 12%) ;
+    --cancel-del-bg-color: hsl(281, 89%, 26%);
+    --cancel-del-shadow:0px 3px 0px 0px  hsl(290, 70%, 36%) ;
+    --circle-color:hsl(176, 100%, 44%);
+    --equal-bg-color: hsl(176, 100%, 44%);
+    --equal-shadow: 0px 3px 0px 0px hsl(177, 92%, 70%);
+    --key-color: hsl(52, 100%, 62%);
+    --grid-bg-color: hsl(268, 71%, 12%);
+    --body-color:hsl(52, 100%, 62%);
+    --otherkeys-color:hsl(0, 0%, 100%);
 }
   
 body{
@@ -60,8 +62,8 @@ body{
     justify-content: center;
     height:100vh;
     align-items: center;
-    background-color: var(--background-color-theme1);
-    color: var(--body-color-theme1);
+    background-color: var(--background-color);
+    color: var(--body-color);
 }
 .main{
     width: 22.5vw;
@@ -93,21 +95,23 @@ body{
     border-radius: 50px;
     display: flex;
     padding: 0.2rem;
-    background-color: var(--circlebg-color-theme1);
+    background-color: var(--circlebg-color);
     align-items: center;
 
 }
-.circle{
+.circle {
     height: 0.8rem;
     width: 0.8rem;
-    background-color: var(--circle-color-theme1);
+    background-color: var(--circle-color);
     border-radius: 50%;
+    transform: translateX(calc(var(--theme) * 50%)); /* Move the circle based on theme */
 }
+
 .circle:hover{
     cursor: pointer;
 }
 .output{
-    background-color: var(--output-bg-color-theme1);
+    background-color: var(--output-bg-color);
     border-radius: 5px;
     font-weight: bold;
     display: flex;
@@ -119,9 +123,9 @@ body{
     white-space: nowrap;
 }
 .key{
-    background-color: var(--key-bg-color-theme1);
-    color: var(--key-color-theme1);
-    box-shadow: var(--key-shadow-theme1);
+    background-color: var(--key-bg-color);
+    color: var(--key-color);
+    box-shadow: var(--key-shadow);
     border-radius: 5px;
     width: 3.2rem;
     height: 1.8rem;
@@ -134,7 +138,7 @@ body{
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
     gap: 1rem;
-    background-color: var(--grid-bg-color-theme1);
+    background-color: var(--grid-bg-color);
     padding: 1rem;
     border-radius: 5px;
 }
@@ -143,9 +147,9 @@ body{
     width: 95%;
 }
 .equal{
-    background-color: var(--equal-bg-color-theme1);
-    box-shadow: var(--equal-shadow-theme1);
-    color: var(--otherkeys-color-theme1);
+    background-color: var(--equal-bg-color);
+    box-shadow: var(--equal-shadow);
+    color: var(--otherkeys-color);
 }
 .key:hover{
     cursor: pointer;
@@ -153,9 +157,9 @@ body{
     filter: brightness(1.4); 
 }
 .cancel,.del{  
-    background-color: var(--cancel-del-bg-color-theme1);
-    box-shadow: var(--cancel-del-shadow-theme1);
-    color: var(--otherkeys-color-theme1);
+    background-color: var(--cancel-del-bg-color);
+    box-shadow: var(--cancel-del-shadow);
+    color: var(--otherkeys-color);
 }
 
 .attribution { 
