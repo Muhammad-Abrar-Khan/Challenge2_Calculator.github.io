@@ -9,7 +9,7 @@
 }
 
 :root {
-    /* --background-color-theme1: hsl(222, 26%, 31%);
+    --background-color-theme1: hsl(222, 26%, 31%);
     --body-color-theme1: hsl(0, 0%, 100%);
     --circle-color-theme1: hsl(6, 63%, 50%);
     --circlebg-color-theme1: hsl(223, 31%, 20%);
@@ -21,59 +21,39 @@
     --equal-bg-color-theme1: hsl(6, 63%, 50%);
     --equal-shadow-theme1: 0px 3px 0px 0px hsl(6, 70%, 34%);
     --cancel-del-bg-color-theme1: hsl(225, 21%, 49%);
-    --cancel-del-shadow-theme1: 0px 3px 0px 0px hsl(224, 28%, 35%); */
+    --cancel-del-shadow-theme1: 0px 3px 0px 0px hsl(224, 28%, 35%);
+    --otherkeys-color-theme1: hsl(0, 0%, 100%);
 
-    /* --background-color-theme1: hsl(0, 0%, 90%);
-    --circlebg-color-theme1:hsl(0, 5%, 81%);
-    --key-bg-color-theme1: hsl(45, 7%, 89%)  ;
-    --output-bg-color-theme1:hsl(0, 0%, 93%) ;
-    --cancel-del-bg-color-theme1: hsl(185, 42%, 37%);
-    --cancel-del-shadow-theme1: hsl(185, 58%, 25%) ;
-    --circle-color-theme1:hsl(25, 98%, 40%) ;
-    --equal-bg-color-theme1: hsl(25, 98%, 40%);
-    --equal-shadow-theme1: 0px 3px 0px 0px hsl(25, 99%, 27%);
-    --key-color-theme1: hsl(60, 10%, 19%) ;
-    --key-shadow-theme1: 0px 3px 0px 0px hsl(35, 11%, 61%);
-    --grid-bg-color-theme1: hsl(0, 5%, 81%); */
+    --background-color-theme2: hsl(0, 0%, 90%);
+    --circlebg-color-theme2:hsl(0, 5%, 81%);
+    --key-bg-color-theme2: hsl(45, 7%, 89%)  ;
+    --output-bg-color-theme2:hsl(0, 0%, 93%) ;
+    --cancel-del-bg-color-theme2: hsl(185, 42%, 37%);
+    --cancel-del-shadow-theme2: 0px 3px 0px 0px hsl(185, 58%, 25%) ;
+    --circle-color-theme2:hsl(25, 98%, 40%) ;
+    --equal-bg-color-theme2: hsl(25, 98%, 40%);
+    --equal-shadow-theme2: 0px 3px 0px 0px hsl(25, 99%, 27%);
+    --key-color-theme2: hsl(60, 10%, 19%) ;
+    --key-shadow-theme2: 0px 3px 0px 0px hsl(35, 11%, 61%);
+    --grid-bg-color-theme2: hsl(0, 5%, 81%); 
+    --otherkeys-color-theme2:hsl(0, 0%, 100%) ;
 
-    /* hsl(0, 0%, 100%) */
-     /* --body-color-theme1:; */
-
-    --background-color-theme1: hsl(268, 75%, 9%);
-    --circlebg-color-theme1:hsl(268, 71%, 12%);
-    --key-bg-color-theme1:  hsl(268, 47%, 21%) ;
-    --key-shadow-theme1: 0px 3px 0px 0px  hsl(290, 70%, 36%);
-    --output-bg-color-theme1:hsl(268, 71%, 12%) ;
-    --cancel-del-bg-color-theme1: hsl(281, 89%, 26%);
-    --cancel-del-shadow-theme1:hsl(285, 91%, 52%) ;
-    --circle-color-theme1:hsl(176, 100%, 44%);
-    --equal-bg-color-theme1: hsl(176, 100%, 44%);
-    --equal-shadow-theme1: 0px 3px 0px 0px hsl(177, 92%, 70%);
-    --key-color-theme1: hsl(52, 100%, 62%);
-    --grid-bg-color-theme1: hsl(268, 71%, 12%);
-    --body-color-theme1:hsl(52, 100%, 62%);
-
-
-    /* - Light yellow: hsl(52, 100%, 62%)
-    - Very dark blue: hsl(198, 20%, 13%)
-    - White (text): hsl(0, 0%, 100%) */
-    
-
-    
-  }
-
-/* CSS
-.theme1 {
-  }
+    --background-color-theme3: hsl(268, 75%, 9%);
+    --circlebg-color-theme3:hsl(268, 71%, 12%);
+    --key-bg-color-theme3:  hsl(268, 47%, 21%) ;
+    --key-shadow-theme3: 0px 3px 0px 0px  hsl(290, 70%, 36%);
+    --output-bg-color-theme3:hsl(268, 71%, 12%) ;
+    --cancel-del-bg-color-theme3: hsl(281, 89%, 26%);
+    --cancel-del-shadow-theme3:0px 3px 0px 0px  hsl(290, 70%, 36%) ;
+    --circle-color-theme3:hsl(176, 100%, 44%);
+    --equal-bg-color-theme3: hsl(176, 100%, 44%);
+    --equal-shadow-theme3: 0px 3px 0px 0px hsl(177, 92%, 70%);
+    --key-color-theme3: hsl(52, 100%, 62%);
+    --grid-bg-color-theme3: hsl(268, 71%, 12%);
+    --body-color-theme3:hsl(52, 100%, 62%);
+    --otherkeys-color-theme3:hsl(0, 0%, 100%);
+}
   
-  .theme2 {
-  }
-  
-  .theme3 {
-
-  } */
-  
-
 body{
     display: flex;
     flex-direction: column;
@@ -165,17 +145,17 @@ body{
 .equal{
     background-color: var(--equal-bg-color-theme1);
     box-shadow: var(--equal-shadow-theme1);
-    color: var(--body-color-theme1);
+    color: var(--otherkeys-color-theme1);
 }
 .key:hover{
     cursor: pointer;
     transform: scale(1.02);
-    filter: brightness(1.2); 
+    filter: brightness(1.4); 
 }
 .cancel,.del{  
     background-color: var(--cancel-del-bg-color-theme1);
     box-shadow: var(--cancel-del-shadow-theme1);
-    color: var(--body-color-theme1);
+    color: var(--otherkeys-color-theme1);
 }
 
 .attribution { 
@@ -184,5 +164,5 @@ body{
     text-align: center; 
 }
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    color:hsl(228, 45%, 44%);
 }
