@@ -43,7 +43,7 @@ function updateCirclePosition() {
 }
 
 function updateTheme() {
-  body.className = ''; // Clear all classes
+  body.className = ''; 
   switch (justifyContentState) {
     case 1:
       body.classList.add('theme1');

@@ -103,7 +103,6 @@ body{
     width: 0.8rem;
     background-color: var(--circle-color);
     border-radius: 50%;
-    /* transition: transform 0.3s ease; */
 }
 
 .circle:hover{
@@ -120,7 +119,7 @@ body{
     display: flex;
     font-size: 1.7rem;
     padding: 0.5rem;
-    height: 18%;
+    height: 15vh;
     align-items: center;
     overflow-x: auto;  
     white-space: nowrap;
@@ -144,6 +143,7 @@ body{
     background-color: var(--grid-bg-color);
     padding: 1rem;
     border-radius: 5px;
+    height: 40vh;
 }
 .cancel,.equal {
     grid-column-start: span 2;
@@ -172,4 +172,93 @@ body{
 }
 .attribution a { 
     color:hsl(228, 45%, 44%);
+}
+@media only screen and (min-width: 2560px) {
+    .top{
+        transform: scale(1.63);
+        justify-content: space-around;
+    }
+    .output{
+        font-size: 2.3rem;
+        padding: 1.2rem;
+        border-radius: 10px;
+        }
+    .grid-container{
+        border-radius: 10px;
+        padding: 2.5rem 1rem 0 4.5rem;
+        height: 45vh;
+
+    }
+    .key,.key:hover{
+        transform: scale(1.7);
+    }
+    .cancel,.equal,.cancel:hover ,.equal:hover {
+        transform: scale(1);
+        height: 3.3rem;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        margin-left: -1rem;
+        width: 90%;
+    }
+    .attribution { 
+        transform: scale(1.9);
+
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .toggle{
+        transform: scale(0.8);
+    }
+    .main{
+        width: 27vw;
+    }
+    .grid-container{
+        height:45vh;
+    }
+    .key{
+        width: 2.7rem;
+        height: 1.6rem;   
+     }
+     .cancel,.equal{
+        width: 95%;
+     }
+     .attribution { 
+        transform: scale(0.9);
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main{
+        width: 34vw;
+    }
+    .key{
+        width: 2.5rem;
+        height: 1.5rem; 
+        font-size: 0.9rem;  
+     }
+     .cancel,.equal{
+        width: 95%;
+     }
+}
+
+@media only screen and (max-width: 425px) {
+    .main{
+        width: 56vw;
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+    .main{
+        width: 64vw;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .main{
+        width: 76vw;
+    }
 }
